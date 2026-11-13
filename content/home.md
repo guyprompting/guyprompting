@@ -19,7 +19,7 @@ That is why I hire for values and character, and mentor and teach the technical 
 
 ## Cross Link Consulting - founded 2004
 
-A managed IT and cybersecurity firm of about fifteen people serving doctors, lawyers, county and municipal governments, accounting firms, and industrial clients across the Augusta area. I founded it, led it as CEO and senior engineer for twenty-two years, and stepped into an advisory role in 2026 so the firm runs on its own leadership.
+A managed IT and cybersecurity firm of about fifteen people serving doctors, lawyers, county and municipal governments, accounting firms, and industrial clients. I founded it, led it as CEO and senior engineer for twenty-two years, and stepped into an advisory role in 2026 so the firm runs on its own leadership.
 
 Four principles are how we put our gifts to work there:
 
@@ -53,7 +53,7 @@ Serving humbly. Leading fruitfully.
 
 
 
-## U.S. Army section (approved 2026-09-16; built between "What I believe" and "Cross Link Consulting")
+## U.S. Army section
 
 ### U.S. Army + Reserves - Biomedical Equipment Specialist
 

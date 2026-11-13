@@ -203,7 +203,7 @@ ${noindex ? '<meta name="robots" content="noindex">' : ""}
 ${body}
 </main>
 <footer class="bar"><div class="wrap">
-  <div class="fine">Patrick Reynolds - North Augusta, South Carolina${foot ? " - " + foot : ""}</div>
+  <div class="fine">Patrick Reynolds${foot ? " - " + foot : ""}</div>
   <div class="close">Serving humbly. Leading fruitfully.</div>
   <div class="fine">Case studies are descriptions, not source. Client names appear only with permission.</div>
 </div></footer>
@@ -215,7 +215,7 @@ ${current === "/try/" || current === "gt" ? `<script>${simJS}</script>` : ""}
 
 const heroHtml = (gt) => `
 <header class="hero">
-  <div class="photo"><div class="frame">${hasHeadshot ? '<img src="/assets/headshot2.jpg" alt="Patrick Reynolds" width="840" height="832">' : '<span class="caps" style="font-size:12px;color:var(--ink2)">Photo coming</span>'}</div><div class="cap">Patrick Reynolds - North Augusta, S.C.</div></div>
+  <div class="photo"><div class="frame">${hasHeadshot ? '<img src="/assets/headshot2.jpg" alt="Patrick Reynolds" width="840" height="832">' : '<span class="caps" style="font-size:12px;color:var(--ink2)">Photo coming</span>'}</div><div class="cap">Patrick Reynolds</div></div>
   <div class="intro">
     <div class="eyebrow">${gt ? "Prepared for the Georgia Tech OIT search committee - Executive Director, AI Enablement &amp; Acceleration - Job 302406" : "AI strategy - governance - people-first implementation"}</div>
     <h1>I invest in people, helping them put their technical gifts to work, so together we can humbly serve our neighbors who need us.</h1>
@@ -246,7 +246,7 @@ const beliefs = `
 <section id="crosslink">
   <div class="sechead"><div><div class="eyebrow">Cross Link Consulting - founded 2004</div><p class="big">How we put our gifts to work.</p></div>
   <div>
-    <div class="prose" style="margin-bottom:22px"><p>A managed IT and cybersecurity firm of about fifteen people serving doctors, lawyers, county and municipal governments, accounting firms, and industrial clients across the Augusta area. I founded it, led it as CEO and senior engineer for twenty-two years, and stepped into an advisory role in 2026 so the firm runs on its own leadership. Four principles are how we put our gifts to work there.</p></div>
+    <div class="prose" style="margin-bottom:22px"><p>A managed IT and cybersecurity firm of about fifteen people serving doctors, lawyers, county and municipal governments, accounting firms, and industrial clients. I founded it, led it as CEO and senior engineer for twenty-two years, and stepped into an advisory role in 2026 so the firm runs on its own leadership. Four principles are how we put our gifts to work there.</p></div>
     <ul class="vals">
       <li><b>Humility</b><p>Rapid learning and mentoring, and the other values, start with humility. It is recognizing that we are not yet who we are called to be.</p></li>
       <li><b>Gratitude</b><p>The people who put their trust in us are trusting us with their livelihoods. We are thankful to be privileged and able to stand in the gap for them.</p></li>
@@ -368,9 +368,7 @@ write("try/index.html", shell({ title: "Try it - Guy Prompting", desc: "How a go
 write("journal/index.html", shell({ title: "Journal - Guy Prompting", desc: "Research in the open: a phone-sized model built from nothing, local inference on one GPU, and negative results kept on the record.", current: "/journal/", body: journalBody }));
 write("contact/index.html", shell({ title: "Contact - Guy Prompting", desc: "Connect with Patrick Reynolds over coffee.", current: "/contact/", body: contactBody }));
 
-const gtPath = fs.readFileSync(path.join(root, "..", "research", "georgia-tech", "portfolio-path.txt"), "utf8").trim().split("=")[1];
-write(`p/${gtPath}/index.html`, shell({ title: "Patrick Reynolds - for Georgia Tech", desc: "Patrick Reynolds, candidate for Executive Director, AI Enablement & Acceleration at Georgia Tech: how I lead, what I have built, and how I govern it.", current: "gt", noindex: true, foot: "Prepared September 2026 for the Georgia Tech search",
-  body: heroHtml(true) + gtMap + beliefs.replace(/href="\/work\/#w0(\d)"/g, 'href="#w0$1"') + workBody.replace('style="padding-top:48px"', 'id="work" style="padding-top:8px"') + tryBody.replace('style="padding-top:48px"', 'id="try" style="padding-top:8px"') + contactBody.replace('style="padding-top:48px"', 'id="contact" style="padding-top:8px"') }));
+// The per-application Georgia Tech page (/p/<token>/) was retired 2026-11-13; the role closed.
 
 fs.writeFileSync(path.join(docs, "assets", "seal.svg"), `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44"><rect width="44" height="44" fill="${C.nav}"/><path d="M8 30 A14 14 0 0 1 36 30 Z" fill="${C.orange}"/><g stroke="${C.navInk}" stroke-width="2.5" stroke-linecap="round"><line x1="22" y1="8" x2="22" y2="13"/><line x1="12" y1="12" x2="15" y2="16"/><line x1="32" y1="12" x2="29" y2="16"/></g><line x1="4" y1="34" x2="40" y2="34" stroke="${C.navInk}" stroke-width="2.5"/></svg>`);
 console.log("headshot:", hasHeadshot ? "present" : "placeholder", " -  resume pdf:", hasResume ? "present" : "absent");

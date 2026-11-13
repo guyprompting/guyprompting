@@ -4,7 +4,7 @@
 
 Those are the two principles I lead by, and everything on this profile is evidence of what happens when you take them seriously.
 
-In 2004 I founded [Cross Link Consulting](https://crosslinkconsulting.net), a security-first IT firm serving county and municipal governments, healthcare and legal practices, accounting firms, and industrial clients across the Augusta area. I led it for twenty-two years and now serve as its advisor. I founded [Resolute AIM](https://resoluteaim.com) to help organizations stop asking AI questions and start putting AI to work, safely, for their people. Most of what goes wrong with AI is not an AI problem. It is an access problem, an identity problem, a data-handling problem. Those are problems I have been solving for twenty-two years.
+In 2004 I founded [Cross Link Consulting](https://crosslinkconsulting.net), a security-first IT firm serving county and municipal governments, healthcare and legal practices, accounting firms, and industrial clients. I led it for twenty-two years and now serve as its advisor. I founded [Resolute AIM](https://resoluteaim.com) to help organizations stop asking AI questions and start putting AI to work, safely, for their people. Most of what goes wrong with AI is not an AI problem. It is an access problem, an identity problem, a data-handling problem. Those are problems I have been solving for twenty-two years.
 
 ## Who I build with
 
