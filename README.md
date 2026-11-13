@@ -6,15 +6,26 @@ Those are the two principles I lead by, and everything on this profile is eviden
 
 In 2004 I founded [Cross Link Consulting](https://crosslinkconsulting.net), a security-first IT firm serving county and municipal governments, healthcare and legal practices, accounting firms, and industrial clients across the Augusta area. I led it for twenty-two years and now serve as its advisor. I founded [Resolute AIM](https://resoluteaim.com) to help organizations stop asking AI questions and start putting AI to work, safely, for their people. Most of what goes wrong with AI is not an AI problem. It is an access problem, an identity problem, a data-handling problem. Those are problems I have been solving for twenty-two years.
 
+## Who I build with
+
+I have the privilege of nurturing and leading an incredible group of problem solvers. I hire for character and teach expertise, and I invest in young technologists until they are leading others. The platforms below matter less to me than the people who learned to run them. AI can do the grinding. Only people can do the shepherding. The aim is never a smaller team; it is the team you already have, twice as effective.
+
+## Speaking and mentoring
+
+I speak with local professional groups, among them accountants, human-resources leaders, young lawyers, and software developers, about putting AI to work for their people rather than in place of them. I say yes to those rooms because our God-given gifts should be put to work in service to our neighbors, and the next generation of leaders is watching how we use this tool.
+
 ## What I build
 
 Most of my production work is private and belongs to the organizations it serves, so the repositories here describe the systems rather than expose them. Each README covers the problem, the architecture, the security posture, and the honest outcome, including what did not work.
 
 | Repository | What it is | Status |
 |---|---|---|
-| governed-agent-platform | Multi-tenant platform where technicians build and run AI agents against real business systems under tiered least-privilege skills, human-approved permission manifests, and a supervising Director agent | Production, one MSP, 33 client tenants |
-| gpu-queue-ledger | PowerShell reservation ledger that lets many concurrent AI-agent sessions share one workstation's GPU and RAM without collisions | In daily use, full source |
-| agentic-engineering-process | The written operating model for teams of people and AI agents: audit-first work packets, isolated worktrees, worker, verifier, and adversarial-reviewer roles, a test gate on every pull request | In daily use |
+| [governed-agent-platform](https://github.com/guyprompting/governed-agent-platform) | Multi-tenant platform where technicians build and run AI agents against real business systems under tiered least-privilege skills, human-approved permission manifests, and a supervising Director agent | Production, one MSP, 33 client tenants |
+| [gpu-queue-ledger](https://github.com/guyprompting/gpu-queue-ledger) | PowerShell reservation ledger that lets many concurrent AI-agent sessions share one workstation's GPU and RAM without collisions | In daily use, full source |
+| [agentic-engineering-process](https://github.com/guyprompting/agentic-engineering-process) | The written operating model for teams of people and AI agents: audit-first work packets, isolated worktrees, worker, verifier, and adversarial-reviewer roles, a test gate on every pull request | In daily use |
+| [melon-code](https://github.com/guyprompting/melon-code) | A Claude-Code-class coding agent running on a local model: what was built, measured, and learned | Working studio, description only |
+| [onnx-hybrid-inference-study](https://github.com/guyprompting/onnx-hybrid-inference-study) | Splitting a model across GPU and CPU by hand on ONNX Runtime GenAI, measured to a negative result and kept on the record | Study complete |
+| [guyprompting](https://github.com/guyprompting/guyprompting) | The source of [guyprompting.com](https://guyprompting.com): case studies in a fixed format, no private source | Live |
 
 Research repositories cover local inference of very large mixture-of-experts models on a single workstation, lossless LLM-driven compression, deterministic context management for long agent sessions, and on-device model selection for phones. Every one keeps a numbered journal, pre-registers decisions, and records negative results.
 
