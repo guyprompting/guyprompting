@@ -2,12 +2,12 @@
 // Usage: node scripts/build-site.js
 // Pages: / (About), /work/, /try/, /journal/, /contact/, and the per-application page under /p/<token>/.
 // Prose source of truth: content/home.md and content/pages.md (edited by Patrick); this file mirrors them.
-// Headshot: docs/assets/headshot.jpg; resume download: docs/assets/Patrick-Reynolds-Resume.pdf (both optional until present).
+// Headshot: docs/assets/headshot2.jpg; resume download: docs/assets/Patrick-Reynolds-Resume.pdf (both optional until present).
 const fs = require("fs"), path = require("path");
 const root = path.join(__dirname, "..");
 const docs = path.join(root, "docs");
 const has = (rel) => fs.existsSync(path.join(docs, rel));
-const hasHeadshot = has("assets/headshot.jpg");
+const hasHeadshot = has("assets/headshot2.jpg");
 const hasResume = has("assets/Patrick-Reynolds-Resume.pdf");
 
 const C = { page: "#F3ECD9", ink: "#3A2A22", ink2: "#5A4A40", ochre: "#8E6420", nav: "#3E2A22", navInk: "#F3ECD9", forest: "#3C5646", forestInk: "#F3ECD9", forestBody: "#D9DFD3", orange: "#E4732C", photo: "#E4DAC2", rule: "#3A2A22", hair: "#CFC3A8", ok: "#3C5646" };
@@ -215,7 +215,7 @@ ${current === "/try/" || current === "gt" ? `<script>${simJS}</script>` : ""}
 
 const heroHtml = (gt) => `
 <header class="hero">
-  <div class="photo"><div class="frame">${hasHeadshot ? '<img src="/assets/headshot.jpg" alt="Patrick Reynolds" width="800" height="1000">' : '<span class="caps" style="font-size:12px;color:var(--ink2)">Photo coming</span>'}</div><div class="cap">Patrick Reynolds - North Augusta, S.C.</div></div>
+  <div class="photo"><div class="frame">${hasHeadshot ? '<img src="/assets/headshot2.jpg" alt="Patrick Reynolds" width="840" height="832">' : '<span class="caps" style="font-size:12px;color:var(--ink2)">Photo coming</span>'}</div><div class="cap">Patrick Reynolds - North Augusta, S.C.</div></div>
   <div class="intro">
     <div class="eyebrow">${gt ? "Prepared for the Georgia Tech OIT search committee - Executive Director, AI Enablement &amp; Acceleration - Job 302406" : "AI strategy - governance - people-first implementation"}</div>
     <h1>I invest in people, helping them put their technical gifts to work, so together we can humbly serve our neighbors who need us.</h1>
