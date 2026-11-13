@@ -126,7 +126,7 @@ const work = [
   { n: "01", title: "Story Maker: a governed AI-agent platform", status: "Production", meta: "2026 - 33 client organizations",
     decision: "The decision that mattered: no agent runs unattended until a person has approved the exact list of operations it may perform.",
     body: "Technicians build and run AI agents against real business systems under tiered least-privilege skills. A human in the loop approves every operation before the agent runs alone; a supervising agent halts anything outside the approved plan. Five inference tiers under U.S.-residency rules; every call attributed for cost. 3,277 automated tests.",
-    href: "https://github.com/clpatrick/governed-agent-platform", link: "Architecture and security posture" },
+    href: "https://github.com/guyprompting/governed-agent-platform", link: "Architecture and security posture" },
   { n: "02", title: "County AI and AI-governance roadmap", status: "In progress", meta: "2026 - Georgia county government",
     decision: "The decision that mattered: write the roadmap with the county's own IT team, not for them.",
     body: "Working alongside a county IT and network team on systems, network, and security operations while helping them write an AI roadmap they can follow: where sensitive data is exposed today, tiered guardrails, in-house inference with controls and visibility, and the staff-augmentation uses worth doing first.",
@@ -138,7 +138,7 @@ const work = [
   { n: "04", title: "Melon Code: a Claude-Code-class agent on a local model", status: "Daily use", meta: "2026 - TypeScript - llama.cpp - NVIDIA NIM",
     decision: "The decision that mattered: run the whole coding-agent loop on a model we own, and point Claude Code at it to learn how the loop really works.",
     body: "The full coding-agent loop, with tools, a four-mode permission engine, subagents, compaction, and rewind, driving a 284-billion-parameter model on one workstation. An Anthropic-compatible endpoint lets Claude Code itself run on local or hosted open models. KV-cache prefix work cut a warm turn from 36 seconds to 1.3.",
-    href: "https://github.com/clpatrick/melon-code", link: "What was built and measured" },
+    href: "https://github.com/guyprompting/melon-code", link: "What was built and measured" },
   { n: "05", title: "Local inference at the edge of one GPU", status: "Research", meta: "2026 - 284B mixture-of-experts - RTX 4090",
     decision: "The decision that mattered: measure before optimizing. Three speculative-decoding routes closed with break-even math; one small change kept.",
     body: "Decode raised from 7.3 to about 20 tokens per second at a stated fidelity floor. A DSpark confidence-scheduled drafter, a multi-token-prediction head, and DFlash each closed with numbers; the DSpark paper's prefix-survival gate implemented in llama.cpp for a measured 7.1% gain. 190+ journal entries, pre-registered decisions.",
@@ -150,11 +150,11 @@ const work = [
   { n: "07", title: "MelonStudio: splitting a model across GPU and CPU by hand", status: "Complete - negative result", meta: "2025-26 - C# - ONNX Runtime GenAI",
     decision: "The decision that mattered: stop. A negative result measured honestly, and the reason later work moved to llama.cpp.",
     body: "ONNX Runtime won't offload layers the way llama.cpp does, so this built it: graph partitioning at layer boundaries, two orchestrated sessions, pinned memory, a stateful KV cache. Measured at 4.4 tokens per second hybrid against 93 GPU-only, the result was to stop.",
-    href: "https://github.com/clpatrick/onnx-hybrid-inference-study", link: "Design, benchmarks, and the negative result" },
+    href: "https://github.com/guyprompting/onnx-hybrid-inference-study", link: "Design, benchmarks, and the negative result" },
   { n: "08", title: "Engineering with people and agents", status: "In daily use", meta: "2026 - process + ledger",
     decision: "The decision that mattered: write the operating model down so people and agents work the same way.",
     body: "Audit-first work packets, isolated worktrees, worker, verifier, and adversarial-reviewer roles, a test gate on every pull request, and a reservation ledger so concurrent agent sessions share one machine without collisions.",
-    href: "https://github.com/clpatrick/agentic-engineering-process", link: "The process, and the ledger's source" }
+    href: "https://github.com/guyprompting/agentic-engineering-process", link: "The process, and the ledger's source" }
 ];
 
 const research = [
@@ -337,7 +337,7 @@ const contactBody = `
   <div class="contact">
     <a href="mailto:patrickfromsc@gmail.com">patrickfromsc@gmail.com</a>
     <a href="https://www.linkedin.com/in/patrickreynolds">LinkedIn</a>
-    <a href="https://github.com/clpatrick">GitHub</a>
+    <a href="https://github.com/guyprompting">GitHub</a>
     <a href="https://resoluteaim.com">Resolute AIM</a>
     <a href="https://crosslinkconsulting.net">Cross Link Consulting</a>
     ${hasResume ? '<a href="/assets/Patrick-Reynolds-Resume.pdf">Resume (PDF)</a>' : ""}

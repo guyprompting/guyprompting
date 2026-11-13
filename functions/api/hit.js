@@ -1,6 +1,6 @@
 // Beacon endpoint used only when the page is served from somewhere other than Cloudflare
 // (e.g. the GitHub Pages fallback). The visitor's browser calls it, so request.cf describes the visitor.
-const ALLOWED = ["https://guyprompting.com", "https://www.guyprompting.com", "https://clpatrick.github.io"];
+const ALLOWED = ["https://guyprompting.com", "https://www.guyprompting.com", "https://guyprompting.github.io"];
 const KNOWN_NETWORKS = { 2637: "Georgia Institute of Technology" };
 function cors(origin) {
   const ok = ALLOWED.includes(origin) ? origin : ALLOWED[0];
